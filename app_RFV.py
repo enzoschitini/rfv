@@ -8,6 +8,8 @@ from datetime            import datetime
 from PIL                 import Image
 from io                  import BytesIO
 
+st.set_page_config(page_title='RFV', layout='wide')
+
 @st.cache
 def convert_df(df):
     return df.to_csv(index=False).encode('utf-8')
